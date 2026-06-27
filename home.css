@@ -1,0 +1,611 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  background-image: url("https://media.istockphoto.com/id/1199678143/photo/black-brushed-metal-wall-abstract-texture-background.jpg?s=612x612&w=0&k=20&c=V79QPooVbaMLeI-qLNUVg7-crsR1qdbt7OOzcEmUbwA=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  color: white;
+  width: 100%;
+  height: 59px;
+  background-color: silver;
+  position: relative;
+  bottom: 20px;
+  box-sizing: border-box;
+}
+.navbar h1 {
+  width: 300px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.links {
+  position: absolute;
+  left: 55.5%;
+
+  bottom: 15px;
+  width: 554px;
+  box-sizing: border-box;
+}
+#L1,
+#L2,
+#L3,
+#L4,
+#L5,
+#L6,
+#L7 {
+  margin-right: 10px;
+}
+.wheelDiv {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  left: 450px;
+}
+/*#wheel{
+    transition: transform 3s ease-in-out;
+}
+#wheel:hover{
+    transform: rotate(45deg);
+}*/
+.hero img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+}
+.hero h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: aliceblue;
+  width: 100px;
+  left: 595px;
+}
+
+.header {
+  background: #000000;
+  /* Left-to-right fade from dark gray to pure black */
+  background: linear-gradient(to right, #434343, #000000);
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+
+  position: relative;
+  left: 40px;
+  /*background-image: url("https://images.unsplash.com/photo-1671159593357-ee577a598f71?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D");*/
+}
+#S {
+  width: 150px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  left: 600px;
+}
+#S h2 {
+  position: relative;
+  color: aliceblue;
+}
+#E {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+#about-me {
+  height: 450px;
+}
+
+#about-me h2 {
+  color: aliceblue;
+  position: relative;
+  left: 20px;
+}
+#me {
+  width: 200px;
+  height: 300px;
+  border-radius: 900px;
+  position: relative;
+  left: 40px;
+  top: 60px;
+  box-shadow: 10px 10px 5px #888888;
+}
+#aboutMeText {
+  background-color: #434343;
+  border-radius: 10px;
+  height: 230px;
+  width: 400px;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 340px;
+  bottom: 230px;
+  box-shadow: 5px 5px 20px 10px rgba(247, 244, 244, 0.3);
+}
+/*#aboutMeText:hover .cross{
+    scale:1.5;
+    animation: slideDiagonal 0.8s forwards;
+}*/
+#aboutMeText p {
+  padding: 10px;
+  color: aliceblue;
+}
+.meaning {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  left: 880px;
+  bottom: 550px;
+}
+.meaning img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px #888888;
+}
+#cross {
+  opacity: 0;
+}
+#cross:hover {
+  scale: 1.2;
+}
+#family {
+  left: 150px;
+  height: 200px;
+  opacity: 0;
+}
+#family:hover {
+  scale: 1.2;
+}
+#knowledge {
+  top: 130px;
+  opacity: 0;
+}
+#knowledge:hover {
+  scale: 1.2;
+}
+#fun {
+  top: 260px;
+  opacity: 0;
+}
+#fun:hover {
+  scale: 1.2;
+}
+#comm {
+  left: 150px;
+  top: 260px;
+  opacity: 0;
+}
+#comm:hover {
+  scale: 1.2;
+}
+#section {
+  color: aliceblue;
+  position: relative;
+  right: 3px;
+  bottom: 7px;
+  height: 10px;
+}
+#skills {
+  height: 300px;
+}
+.main-skills {
+  position: relative;
+  left: 400px;
+  width: 550px;
+  height: 230px;
+  top: 10px;
+}
+.main-skills img {
+  height: 100px;
+  width: 130px;
+}
+.main-skills div {
+  width: 150px;
+  height: 100px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 20px 10px rgba(247, 244, 244, 0.3);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#java {
+  justify-content: center;
+  align-items: center;
+}
+#java img {
+  position: relative;
+  left: 7px;
+}
+#java p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  left: 60px;
+  color: black;
+  font-size: 15px;
+}
+#java:hover {
+  height: 120px;
+}
+#java:hover p {
+  display: block;
+}
+
+#js {
+  position: relative;
+  left: 200px;
+  bottom: 100px;
+}
+#js img {
+  position: relative;
+  left: 10px;
+}
+#js p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  left: 42px;
+  top: -10px;
+}
+#js:hover {
+  height: 130px;
+}
+#js:hover p {
+  display: block;
+}
+#html {
+  position: relative;
+  left: 400px;
+  bottom: 198px;
+}
+#html img {
+  scale: 0.9;
+  position: relative;
+  left: 10px;
+}
+#html p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  left: 55px;
+  top: -10px;
+}
+#html:hover {
+  height: 130px;
+}
+#html:hover p {
+  display: block;
+}
+#css {
+  position: relative;
+  bottom: 170px;
+}
+#css img {
+  position: relative;
+  left: 10px;
+}
+#css p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  left: 60px;
+  top: -10px;
+}
+#css:hover {
+  height: 130px;
+}
+#css:hover p {
+  display: block;
+}
+#teamwork {
+  position: relative;
+  bottom: 270px;
+  left: 200px;
+}
+#teamwork img {
+  position: relative;
+  left: 10px;
+  scale: 0.9;
+}
+#teamwork p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  left: 40px;
+  top: -10px;
+}
+#teamwork:hover {
+  height: 130px;
+}
+#teamwork:hover p {
+  display: block;
+}
+#speech {
+  position: relative;
+  bottom: 370px;
+  left: 400px;
+}
+#speech img {
+  position: relative;
+  left: 10px;
+  scale: 0.9;
+}
+#speech p {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  color: black;
+  font-size: 15px;
+  left: 25px;
+  top: -10px;
+}
+#speech:hover {
+  height: 130px;
+}
+#speech:hover p {
+  display: block;
+}
+#Work {
+  position: relative;
+  left: 40px;
+  background-color: #434343;
+  width: 622px;
+  /*height: 630px;*/
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px gray;
+
+  margin-top: 20px;
+}
+#Work h3 {
+  color: aliceblue;
+  position: relative;
+  width: 200px;
+  left: 225px;
+  top: 5px;
+}
+#Work h6 {
+  color: aqua;
+}
+#Work div {
+  color: aliceblue;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+#A1 {
+  display: none;
+  color: gold;
+}
+#click {
+  display: none;
+  color: aqua;
+}
+#Nextech {
+  width: 600px;
+  height: 210px;
+}
+#Nextech:hover h5 {
+  display: block;
+}
+#Nextech:hover {
+  border-radius: 10px;
+  background-color: black;
+}
+#NT-projects img {
+  width: 200px;
+  height: 120px;
+}
+
+#learned {
+  display: none;
+  position: relative;
+  left: 690px;
+  bottom: 645px;
+  width: 565px;
+  height: 170px;
+
+  box-sizing: border-box;
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#learned h4 {
+  /* Since #learned is a flex container now, anchor titles absolutely so they don't break the row alignment */
+  position: relative;
+  top: -5px;
+  left: 39%;
+  color: aliceblue;
+  margin: 0px;
+}
+
+/* SHARED LESSON STYLING: Combines duplicate code rules */
+
+/* INDIVIDUAL COORDINATES ARE NO LONGER NEEDED! */
+#lesson1,
+#lesson2,
+#lesson3 {
+  /* Flex space-around automatically places them horizontally! */
+}
+/*#Nextech{
+  width:600px;
+  height:210px;
+}
+#Nextech:hover h5 {
+  display: block;
+}
+#Nextech:hover {
+  border-radius: 10px;
+  background-color: black;
+}
+#NT-projects img {
+  width: 200px;
+  height: 120px;
+}
+#learned {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+  width: 550px;
+  height: 170px;
+  position: relative;
+  bottom: 500px;
+  transform: translateY(-500px);
+  left: 635px;
+  bottom: 317px;
+  
+ 
+  border: 2px solid whitesmoke;
+
+  border-radius: 10px;
+  display:block;
+}
+/*#learned:hover{
+  border: 2px dashed whitesmoke;
+  scale:1.01;
+  
+}*/
+/*#learned h4 {
+  position: relative;
+  bottom: -3px;
+  left: 210px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+#learned div {
+  position: relative;
+  top: 10px;
+}
+#learned div p {
+  position: relative;
+  color: #000000;
+  color: linear-gradient(to right, #434343, #000000);
+  top: 5px;
+  left: 0px;
+}*/
+#lesson1 {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+  box-shadow: 2px 2px 10px 2px gold;
+  width: 100px;
+  height: 100px;
+  border-radius: 1000px;
+  color: #000000;
+  color: linear-gradient(to right, #434343, #000000);
+  padding-bottom: 15px;
+  padding-left: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#lesson2 {
+  position: relative;
+  left: 205px;
+
+  transform: translateY(-110px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+  box-shadow: 2px 2px 10px 2px gold;
+  width: 100px;
+  height: 100px;
+  border-radius: 2000px;
+  color: #000000;
+  color: linear-gradient(to right, #434343, #000000);
+  padding-bottom: 15px;
+  padding-left: 15px;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+#lesson2 p {
+  position: relative;
+  top: 7px;
+  right: 7px;
+}
+#lesson3 {
+  position: relative;
+  left: 425px;
+  transform: translateY(-225px);
+  display: flex;
+  align-items: center;
+  background: gold;
+  box-shadow: 2px 2px 10px 2px gold;
+  width: 100px;
+  height: 100px;
+  border-radius: 2000px;
+  color: #000000;
+  color: linear-gradient(to right, #434343, #000000);
+  padding-bottom: 15px;
+  padding-left: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#lesson3 p {
+  position: relative;
+  right: 6px;
+  top: 8px;
+}
+#E1 {
+  width: 255px;
+}
+#E3 {
+  width: 325px;
+}
+#E2 {
+  width: 500px;
+}
+#E1:hover,
+#E2:hover,
+#E3:hover {
+  border-radius: 10px;
+  background-color: #000000;
+}
+#vex {
+  display: none;
+}
+#frc {
+  display: none;
+}
+#s-d {
+  display: none;
+}
+/*
+make a opacity transition for each lesson div for it to get into place.
+This is should happen when the learned div is clicked for the second time.
+Then, from right to left each lesson div slides down after that second click.
+*/
