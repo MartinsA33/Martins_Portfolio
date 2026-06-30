@@ -86,6 +86,7 @@ body {
 
   position: relative;
   left: 40px;
+
   /*background-image: url("https://images.unsplash.com/photo-1671159593357-ee577a598f71?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D");*/
 }
 #S {
@@ -417,8 +418,9 @@ body {
   background-color: black;
 }
 #NT-projects img {
-  width: 200px;
-  height: 120px;
+  width: 400px;
+  height: 240px;
+  gap: 20px;
 }
 
 #learned {
@@ -448,14 +450,6 @@ body {
   margin: 0px;
 }
 
-/* SHARED LESSON STYLING: Combines duplicate code rules */
-
-/* INDIVIDUAL COORDINATES ARE NO LONGER NEEDED! */
-#lesson1,
-#lesson2,
-#lesson3 {
-  /* Flex space-around automatically places them horizontally! */
-}
 /*#Nextech{
   width:600px;
   height:210px;
@@ -609,3 +603,36 @@ make a opacity transition for each lesson div for it to get into place.
 This is should happen when the learned div is clicked for the second time.
 Then, from right to left each lesson div slides down after that second click.
 */
+
+#P {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.NT-projects {
+  margin-top: 20px;
+  position: relative;
+  left: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: aliceblue;
+}
+.NT-projects div {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px gray;
+}
+.NT-projects h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.NT-projects img {
+  border-radius: 10px;
+  width: 450px;
+  height: 240px;
+}

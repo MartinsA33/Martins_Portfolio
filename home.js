@@ -203,32 +203,51 @@ let frc = document.querySelector("#frc");
 
 E1.addEventListener("mouseover", () => {
   vex.style.display = "block";
-  /* lesson1.style.visibility = "hidden";
+  lesson1.style.visibility = "hidden";
   lesson2.style.visibility = "hidden";
   lesson3.style.visibility = "hidden";
-  learned.style.visibility = "hidden";*/
+  learned.style.display = "none";
 });
 E1.addEventListener("mouseout", () => {
   vex.style.display = "none";
 });
 E2.addEventListener("mouseover", () => {
   SD.style.display = "block";
-  /*lesson1.style.visibility = "hidden";
-    lesson2.style.visibility = "hidden";
-    lesson3.style.visibility = "hidden";
-   learned.style.visibility = "hidden";*/
+  lesson1.style.visibility = "hidden";
+  lesson2.style.visibility = "hidden";
+  lesson3.style.visibility = "hidden";
+  learned.style.display = "none";
 });
 E2.addEventListener("mouseout", () => {
   SD.style.display = "none";
 });
 E3.addEventListener("mouseover", () => {
   frc.style.display = "block";
-  /* lesson1.style.visibility = "hidden";
+  lesson1.style.visibility = "hidden";
   lesson2.style.visibility = "hidden";
   lesson3.style.visibility = "hidden";
-  learned.style.visibility = "hidden";*/
+  learned.style.display = "none";
 });
 E3.addEventListener("mouseout", () => {
   frc.style.display = "none";
+});
+
+let AProblem = document.querySelector("#AProblem");
+let ChudLife = document.querySelector("#Chud-Life");
+
+AProblem.addEventListener("click", () => {
+  window.open(
+    "https://martinsa33.github.io/int-u2-project-starter-code-3/",
+    "_blank",
+    "noopener,noreferrer",
+  );
+});
+
+ChudLife.addEventListener("click", () => {
+  window.open(
+    "https://martinsa33.github.io/int-u3-project-23-24-starter-code/",
+    "_blank",
+    "noopener,noreferrer",
+  );
 });
 //You can make an on click function for each image so that then when an image is clicked it puts text inside its corresponing <span></span>
