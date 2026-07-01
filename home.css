@@ -45,12 +45,15 @@ body {
 }
 .wheelDiv {
   width: 400px;
-  height: 300px;
+  height: 280px;
   display: flex;
   justify-content: center;
 
   position: relative;
   left: 450px;
+}
+#wheel {
+  scale: 0.75;
 }
 /*#wheel{
     transition: transform 3s ease-in-out;
@@ -58,6 +61,9 @@ body {
 #wheel:hover{
     transform: rotate(45deg);
 }*/
+.hero {
+  height: 400px;
+}
 .hero img {
   position: absolute;
   display: flex;
@@ -198,10 +204,14 @@ body {
 }
 #section {
   color: aliceblue;
+  background-color: black;
   position: relative;
-  right: 3px;
-  bottom: 7px;
-  height: 10px;
+  left: 624px;
+  bottom: 5px;
+  height: 15px;
+  padding: 5px;
+  padding-top: 3px;
+  border-radius: 10px;
 }
 #skills {
   height: 300px;
@@ -614,8 +624,9 @@ Then, from right to left each lesson div slides down after that second click.
 .NT-projects {
   margin-top: 20px;
   position: relative;
-  left: 120px;
+  left: 40px;
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
   gap: 20px;
   color: aliceblue;
@@ -635,4 +646,27 @@ Then, from right to left each lesson div slides down after that second click.
   border-radius: 10px;
   width: 450px;
   height: 240px;
+}
+
+#P1 h4 {
+  display: none;
+}
+#P1 p {
+  display: none;
+  width: 450px;
+}
+#P2 h4 {
+  display: none;
+}
+#P2 p {
+  display: none;
+  width: 450px;
+}
+#contact div {
+  color: aliceblue;
+}
+#contactH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

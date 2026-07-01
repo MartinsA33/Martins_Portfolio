@@ -9,33 +9,38 @@ wheelDiv.addEventListener("click", function () {
   // alert("hello");
   currentRot += 45;
   currentPg++;
-  wheel.style.transition = "transform 3s ease-in-out";
+  wheel.style.transition = "transform 1s ease-in-out";
   wheel.style.transform = `rotate(${currentRot}deg)`;
   //add a if and else if conditionals that determine what will appear in the text in the <span> tag.
   // the <span> tag should be placed above the wheelDiv it will be called "section" with #section.
   // the if and else if condtionals will use currentPg to figue out which what will print
   //for example:
   if (currentPg == 1) {
-    // section.style.left = "230px";
+    section.style.left = "610px";
     section.innerHTML = "Experience";
+    section.href = "#expericence";
   } else if (currentPg == 2) {
-    section.style.left = "5px";
+    section.style.left = "625px";
     section.innerHTML = "Projects";
+    section.href = "#projects";
   } else if (currentPg == 3) {
-    section.style.left = "8px";
-    section.innerHTML = "Learn";
+    section.style.left = "628px";
+    section.innerHTML = "Learning";
   } else if (currentPg == 4) {
+    section.style.left = "638px";
     section.innerHTML = "Fun";
   } else if (currentPg == 5) {
-    section.style.left = "-2px";
+    section.style.left = "632px";
     section.innerHTML = "Me";
   } else if (currentPg == 6) {
-    section.style.left = "-3px";
+    section.style.left = "618px";
     section.innerHTML = "Contact";
+    section.href = "#contact";
   } else if (currentPg == 7) {
     section.innerHTML = "Content";
   } else if (currentPg >= 8) {
     currentPg = 0;
+    section.style.left = "624px";
     section.innerHTML = "Skills";
   }
   //make sure to set a way to reset currentPg to 0 when the wheel gets back to skills.
@@ -233,7 +238,15 @@ E3.addEventListener("mouseout", () => {
 });
 
 let AProblem = document.querySelector("#AProblem");
+let AProblemH = document.querySelector("#AProblemH");
+let AProblemP = document.querySelector("#AProblemP");
+
 let ChudLife = document.querySelector("#Chud-Life");
+let P1 = document.querySelector("#P1");
+
+let P1h = document.querySelector("#P1h");
+let P1p = document.querySelector("#P1p");
+let P2 = document.querySelector("#P2");
 
 AProblem.addEventListener("click", () => {
   window.open(
@@ -242,7 +255,15 @@ AProblem.addEventListener("click", () => {
     "noopener,noreferrer",
   );
 });
+AProblem.addEventListener("mouseover", () => {
+  AProblemH.style.display = "block";
 
+  AProblemP.style.display = "block";
+});
+AProblem.addEventListener("mouseout", () => {
+  AProblemH.style.display = "none";
+  AProblemP.style.display = "none";
+});
 ChudLife.addEventListener("click", () => {
   window.open(
     "https://martinsa33.github.io/int-u3-project-23-24-starter-code/",
@@ -250,4 +271,21 @@ ChudLife.addEventListener("click", () => {
     "noopener,noreferrer",
   );
 });
+ChudLife.addEventListener("mouseover", () => {
+  P1h.style.display = "block";
+  P1p.style.display = "block";
+});
+ChudLife.addEventListener("mouseout", () => {
+  P1h.style.display = "none";
+  P1p.style.display = "none";
+});
+
+/*P1.addEventListener("mouseover", () => {
+  P1h.style.display = "block";
+   P1p.style.display = "block";
+});
+P1.addEventListener("mouseout", () => {
+  P1h.style.display = "none";
+  P1p.style.display = "none";
+});*/
 //You can make an on click function for each image so that then when an image is clicked it puts text inside its corresponing <span></span>
