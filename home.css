@@ -670,3 +670,26 @@ Then, from right to left each lesson div slides down after that second click.
   justify-content: center;
   align-items: center;
 }
+#contactD {
+  width: 250px;
+  padding: 1px 10px 10px 10px;
+
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: gray;
+  position: relative;
+  left: 40px;
+}
+#contactD a {
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+#contactD a:hover {
+  color: aqua;
+}
+footer div {
+  position: relative;
+  left: 40px;
+  width: 100px;
+}
