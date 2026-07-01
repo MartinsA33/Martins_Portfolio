@@ -18,7 +18,7 @@ wheelDiv.addEventListener("click", function () {
   if (currentPg == 1) {
     section.style.left = "610px";
     section.innerHTML = "Experience";
-    section.href = "#expericence";
+    section.href = "#experience";
   } else if (currentPg == 2) {
     section.style.left = "625px";
     section.innerHTML = "Projects";
@@ -26,18 +26,22 @@ wheelDiv.addEventListener("click", function () {
   } else if (currentPg == 3) {
     section.style.left = "628px";
     section.innerHTML = "Learning";
+    section.href = "#learning";
   } else if (currentPg == 4) {
     section.style.left = "638px";
     section.innerHTML = "Fun";
+    section.href = "#hobbies";
   } else if (currentPg == 5) {
     section.style.left = "632px";
     section.innerHTML = "Me";
+    section.href = "#about-me";
   } else if (currentPg == 6) {
     section.style.left = "618px";
     section.innerHTML = "Contact";
     section.href = "#contact";
   } else if (currentPg == 7) {
-    section.innerHTML = "Content";
+    section.innerHTML = "Context";
+    section.href = "context.html";
   } else if (currentPg >= 8) {
     currentPg = 0;
     section.style.left = "624px";
@@ -144,12 +148,13 @@ aboutMeText.addEventListener("click", () => {
 
 let nextech = document.querySelector("#Nextech");
 let learned = document.querySelector("#learned");
-
+let testimonial = document.querySelector("#testimonial");
 let learnC = 0;
 
 nextech.addEventListener("click", () => {
   //alert("hello");
   learned.style.display = "block";
+  testimonial.style.display = "none";
   learnC = 0;
 });
 learned.addEventListener("mouseover", () => {
@@ -289,3 +294,18 @@ P1.addEventListener("mouseout", () => {
   P1p.style.display = "none";
 });*/
 //You can make an on click function for each image so that then when an image is clicked it puts text inside its corresponing <span></span>
+
+let button = document.querySelector("button");
+let clickC = 0;
+button.addEventListener("click", () => {
+  clickC++;
+  if (clickC % 2 != 0) {
+    lesson1.style.visibility = "hidden";
+    lesson2.style.visibility = "hidden";
+    lesson3.style.visibility = "hidden";
+    learned.style.display = "none";
+    testimonial.style.display = "block";
+  } else {
+    testimonial.style.display = "none";
+  }
+});
