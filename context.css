@@ -1,10 +1,24 @@
 body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHdb2Xy74Z9X5rviK1ygowyL-SWN5gohYsOoump8a-ws3xZKRYp3a6b1g&s=10");
+  background-image: url("https://media.istockphoto.com/id/1199678143/photo/black-brushed-metal-wall-abstract-texture-background.jpg?s=612x612&w=0&k=20&c=V79QPooVbaMLeI-qLNUVg7-crsR1qdbt7OOzcEmUbwA=");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0px;
   overflow-x: hidden;
+
+  margin: 0px;
 }
 /*Add a full image of Mahoraga.
 Then, give an explanation of who and what he is and why he is relevant to me.*/
+img {
+  scale: 0.65;
+  position: relative;
+  left: 60%;
+  bottom: 120px;
+}
+div {
+  color: aliceblue;
+  position: relative;
+  left: 200px;
+  bottom: 700px;
+}

@@ -41,7 +41,8 @@ wheelDiv.addEventListener("click", function () {
     section.href = "#contact";
   } else if (currentPg == 7) {
     section.innerHTML = "Context";
-    section.href = "context.html";
+    section.href =
+      "https://jujutsu-kaisen.fandom.com/wiki/Eight-Handled_Sword_Divergent_Sila_Divine_General_Mahoraga";
   } else if (currentPg >= 8) {
     currentPg = 0;
     section.style.left = "624px";
@@ -106,6 +107,7 @@ window.addEventListener("DOMContentLoaded", type);
 
 //Here You have the choice to later add on if you want the images in the "meaning" class to smoothly slide to a specified position for each.
 //That will happen when the aboutMeText is clicked.
+//Function to increase the Opacity of what ever element is passed.
 function increaseOpacity(element, currentOpacity) {
   //alert("called");
   if (currentOpacity < 1) {
@@ -116,6 +118,8 @@ function increaseOpacity(element, currentOpacity) {
     requestAnimationFrame(() => increaseOpacity(element, currentOpacity));
   }
 }
+
+//Click function for the about me section to show things I find meaningful
 let meaningC = 0;
 
 let aboutMeText = document.querySelector("#aboutMeText");
@@ -146,6 +150,7 @@ aboutMeText.addEventListener("click", () => {
   }
 });
 
+//Hover and click functions for nextech work experience.
 let nextech = document.querySelector("#Nextech");
 let learned = document.querySelector("#learned");
 let testimonial = document.querySelector("#testimonial");
@@ -170,6 +175,8 @@ learned.addEventListener("mouseout", () => {
     learnC = 0;
   }
 });
+
+//When clicked is makes a lesson I learned appear.
 learned.addEventListener("click", () => {
   learnC++;
   if (learnC == 1) {
@@ -204,6 +211,8 @@ learned.addEventListener("click", () => {
     //location.reload();
   }
 });
+
+//Hover functions for extracurriculars
 let E1 = document.querySelector("#E1");
 let E2 = document.querySelector("#E2");
 let E3 = document.querySelector("#E3");
@@ -242,6 +251,7 @@ E3.addEventListener("mouseout", () => {
   frc.style.display = "none";
 });
 
+//Hover functions for projects
 let AProblem = document.querySelector("#AProblem");
 let AProblemH = document.querySelector("#AProblemH");
 let AProblemP = document.querySelector("#AProblemP");
@@ -285,16 +295,7 @@ ChudLife.addEventListener("mouseout", () => {
   P1p.style.display = "none";
 });
 
-/*P1.addEventListener("mouseover", () => {
-  P1h.style.display = "block";
-   P1p.style.display = "block";
-});
-P1.addEventListener("mouseout", () => {
-  P1h.style.display = "none";
-  P1p.style.display = "none";
-});*/
-//You can make an on click function for each image so that then when an image is clicked it puts text inside its corresponing <span></span>
-
+//Testimonial button to toggle between showing and not showing.
 let button = document.querySelector("button");
 let clickC = 0;
 button.addEventListener("click", () => {
@@ -308,4 +309,45 @@ button.addEventListener("click", () => {
   } else {
     testimonial.style.display = "none";
   }
+});
+
+//This if for the Journey part of my portfolio
+let stageI = document.querySelector("#StageI");
+let stageT = document.querySelector("#StageT");
+let stageP = document.querySelector("#StageP");
+let stage = document.querySelector("#early");
+let stageC = 0;
+
+//Changes the stage in life in the Journey section
+stage.addEventListener("click", () => {
+  stageC++;
+
+  if (stageC == 1) {
+    stageI.src =
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+    stageT.innerHTML = "Development Years";
+    stageP.innerHTML =
+      "From 2015 to December of 2024 I lived in New Jersey. In New Jersey my and I went from living with relatives, to living a more urban neiborhood, then to a very small town suburb. With my relatives we lived with them about 2-3 months, in the more urban area we lived there 5 years then, lived in that small suburb for almost 3 years. Then in December of 2024 my family and I moved to Indiana. Each move I accepted it and simply adapted. It hurt sometimes to let go of those I met at each place, but I became used to it as that how it always was.";
+  } else if (stageC == 2) {
+    stageI.style.scale = ".95";
+    stageI.src =
+      "https://media.istockphoto.com/id/170091505/photo/blue-question-mark.jpg?s=612x612&w=0&k=20&c=LPPlKrRZBRmHpoJWwYFo0CRB8vtZjGHLi2yuUCv6t8M=";
+    stageT.innerHTML = "The Future";
+    stageP.innerHTML =
+      "The future is a topic that though I may worry about a lot, as it is uncertain. I try to leave it to God and that what ever comes my way through my diverse and fluctuating childhood I will be able to adapt. But in my planning I have decided I would like to hopefully attend university for an Electrical Engineering degree preferablely at Purdue University at West Lafayette. With that degree and what they offer at Purdue I plan on doing something in things including but not limited to: quantum computing and technology, robotics, and Photonic Integrated Circuits.";
+  }
+});
+
+//Changes the color of the shadow based ofthe stage in life is being displayed.
+stage.addEventListener("mouseover", () => {
+  if (stageC == 0) {
+    stage.style.boxShadow = "10px 10px 10px lightgreen";
+  } else if (stageC == 1) {
+    stage.style.boxShadow = "10px 10px 10px lightcoral";
+  } else if (stageC == 2) {
+    stage.style.boxShadow = "10px 10px 10px white";
+  }
+});
+stage.addEventListener("mouseout", () => {
+  stage.style.boxShadow = "none";
 });
